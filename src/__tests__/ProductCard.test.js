@@ -1,5 +1,6 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ProductCard from '../src/components/ProductCard';
+import ProductCard from '../components/ProductCard';
 
 test('renders product title', () => {
   render(<ProductCard title="Cool Shirt" />);
