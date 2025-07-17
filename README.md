@@ -1,108 +1,51 @@
-# React E-Commerce App with CI/CD Pipeline
+# React E-Commerce App with CI/CD and TDD
 
-This is a fully functional React-based E-Commerce application integrated with a modern CI/CD pipeline using **GitHub Actions** and **Vercel** for seamless deployment.
+This project is a responsive and dynamic **React E-Commerce App** that showcases modern development practices including:
+
+- **CI/CD** with GitHub Actions and Vercel
+- **Test-Driven Development (TDD)** using Jest and React Testing Library
+- **Unit and integration testing**
+- Automated deployment pipeline from GitHub to production
 
 ---
 
 ## Live Demo
 
-🔗 [View Live Site on Vercel](https://vercel.com/adam-s-projects-21e7cf23/ci-cd-e-commerce-app/39rCDovbzH4ZE2LNmN3FmLF8fp4N)
-
----
-
-## Tech Stack
-
-- **Frontend:** React, React Router
-- **Testing:** Jest + React Testing Library
-- **CI/CD:** GitHub Actions + Vercel
-- **Version Control:** Git & GitHub
+ [View Live Site on Vercel](https://ci-cd-e-commerce-app.vercel.app)
 
 ---
 
 ## Features
 
-- Add to cart
-- Session storage-based cart management
-- Checkout simulation
-- Unit testing
-- Continuous deployment via Vercel
-- Automated testing with GitHub Actions
+- Product catalog with reusable `ProductCard` components
+- Navigation bar using React Router
+- Cart system with stateful logic
+- Jest-based test coverage for components
+- Continuous Integration via **GitHub Actions**
+- Continuous Deployment to **Vercel**
 
 ---
 
-## Test Coverage
+## Test-Driven Development (TDD)
 
-This project uses **Jest** and **React Testing Library** for unit testing.
+This project applies **Test-Driven Development** principles, with a focus on writing tests before implementing features.
+
+## Tech Stack
+
+- **React** – Core framework  
+- **React Scripts** – Build, run, and test tooling  
+- **Jest** – JavaScript testing framework  
+- **React Testing Library** – Unit testing for React components  
+- **GitHub Actions** – Continuous integration (CI)  
+- **Vercel** – Continuous deployment (CD) and production hosting  
+
+### Sample Tests:
+- `Navbar.test.js`: Ensures branding is displayed
+- `ProductCard.test.js`: Confirms product title renders
+- `Cart.test.js`: Verifies cart item addition/removal
+
+All tests are run via:
 
 ```bash
 npm test
-```
 
-Tests include:
-- Navbar render test
-- ProductCard content test
-- App renders properly test
-
----
-
-## Continuous Deployment
-
-CI/CD is powered by:
-- **GitHub Actions**: Automatically runs tests on push
-- **Vercel**: Automatically builds and deploys the app
-
----
-
-## File Structure Overview
-
-```
-react-ecommerce-app/
-├── src/
-│   ├── components/
-│   ├── __tests__/
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── public/
-├── package.json
-├── .github/workflows/
-│   └── main.yml
-├── .vercel/
-├── vercel.json
-└── README.md
-```
-
----
-
-## Setup Instructions
-
-```bash
-# Install dependencies
-npm install
-
-# Run locally
-npm start
-
-# Run tests
-npm test
-
-# Build
-npm run build
-```
-
----
-
-## Author Notes
-
-This project was built as a practice in:
-- Building production-ready React apps
-- Implementing CI/CD workflows
-- Test-Driven Development (TDD)
-
----
-
-## Contact
-
-For inquiries, reach out at: [aloha.adam98@gmail.com]
-
----
